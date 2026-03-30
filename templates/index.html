@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="zh-Hant">
+<head>
+  <meta charset="UTF-8" />
+  <title>主頁</title>
+  <style>
+    body { font-family: Arial, sans-serif; background: #f7f7fb; margin: 40px; color: #222; }
+    .card { max-width: 760px; margin: 0 auto; background: #fff; padding: 32px; border-radius: 18px; box-shadow: 0 8px 24px rgba(0,0,0,.08); }
+    .btn { display: inline-block; padding: 12px 18px; border: 0; border-radius: 10px; background: #111827; color: #fff; text-decoration: none; cursor: pointer; }
+    .hint { color: #666; }
+    .mono { font-family: Consolas, monospace; word-break: break-all; }
+  </style>
+</head>
+<body>
+  <div class="card">
+    <h1>本地主頁</h1>
+    <p class="hint">此版本按鈕固定顯示 GitHub 帳號主頁的 QRCode。</p>
+    <p>目前帳號：<strong>{{ username }}</strong></p>
+    <p class="mono">{{ target_url }}</p>
+    <p style="margin-top: 20px;">
+      <a class="btn" href="/qrcode">顯示 QRCode</a>
+    </p>
+  </div>
+</body>
+</html>

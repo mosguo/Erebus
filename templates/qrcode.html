@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="zh-Hant">
+<head>
+  <meta charset="UTF-8" />
+  <title>QRCode</title>
+  <style>
+    body { font-family: Arial, sans-serif; background: #f7f7fb; margin: 40px; color: #222; }
+    .card { max-width: 760px; margin: 0 auto; background: #fff; padding: 32px; border-radius: 18px; box-shadow: 0 8px 24px rgba(0,0,0,.08); }
+    .btn { display: inline-block; padding: 12px 18px; border-radius: 10px; background: #111827; color: #fff; text-decoration: none; }
+    .qr { margin-top: 20px; display: inline-block; padding: 16px; border: 1px solid #e5e7eb; border-radius: 16px; background: #fff; }
+    .link { word-break: break-all; }
+  </style>
+</head>
+<body>
+  <div class="card">
+    <h1>GitHub 主頁 QRCode</h1>
+    <p>帳號：<strong>{{ username }}</strong></p>
+    <p class="link">連結：<a href="{{ target_url }}" target="_blank">{{ target_url }}</a></p>
+    <div class="qr">
+      <img src="{{ qr_data_uri }}" alt="QRCode" width="300" height="300" />
+    </div>
+    <p style="margin-top: 24px;">
+      <a class="btn" href="/">回主頁</a>
+    </p>
+  </div>
+</body>
+</html>
